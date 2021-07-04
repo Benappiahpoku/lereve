@@ -31,20 +31,22 @@
       }
     </style>
 
-      <!-- font-awesome cdn -->
+    <!-- font-awesome cdn -->
         <script src="https://use.fontawesome.com/ff821be39a.js"></script>
     <!-- Custom styles for this template -->
-    <link href="headers.css" rel="stylesheet">
+    <link href="./dist/css/headers.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="features.css" rel="stylesheet">
+    <link href="./dist/css/features.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="pricing.css" rel="stylesheet">
+    <link href="./dist/css/pricing.css" rel="stylesheet">
 
+     <!-- Personal Custom styles for this template -->
+    <link href="./dist/css/style.css" rel="stylesheet">
 
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom" >
   <main>
     <!-- Headers SVG -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -164,37 +166,45 @@
 
   <!-- nav bar --> 
      
-    <nav class="navbar navbar-expand-md py-3 fixed-top navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <nav class="navbar navbar-expand-md navbar-custom py-3 fixed-top navbar-dark " aria-label="Fourth navbar example">
     <div class="container-fluid">
-
       <a class="navbar-brand" href="#">
-      <img src="./dist/img/bootstrap-logo.svg"  alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
+      <img src="./dist/img/logo2.png"  alt="" width="30" height="24" class="d-inline-block align-text-top">
+    Le R&ecirc;ve Agency
     </a>
 
 
-
+      <div class="page-scroll">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      </div>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
-          <li class="nav-item">
+        <ul class="nav navbar-nav mx-auto mb-2 mb-md-0">
+
+           <li class="hidden">
+              <a href="#page-top" class="nav-link"></a>
+            </li>
+
+          <li class=" page-scroll nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Services</a>
+          <li class=" page-scroll nav-item">
+            <a class="nav-link" href="#service">Our Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Our Portfolio</a>
+           <li class=" page-scroll nav-item">
+            <a class="nav-link" href="#customer">Customer Plans</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+           <li class=" page-scroll nav-item">
+            <a class="nav-link" href="#about">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+          <li class="page-scroll nav-item">
+            <a class="nav-link" href="#portfolio">Our Portfolio</a>
           </li>
+          <li class=" page-scroll nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>      
                 
           
         </ul>
@@ -216,8 +226,7 @@
         <h1 class="display-5 fw-bold lh-1 mb-3"> Come & Build Beautiful and Engaging Online Experiences with US</h1>
         <p class="lead"> We specialize in crafting beautiful and engaging Online Experiences to create unique identities for Your Business.</p> 
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-dark btn-lg px-4 me-md-2">Get in Touch</button>
-          
+          <button type="button" class="btn btn-primary btn-dark btn-lg px-4 me-md-2">Get in Touch</button>          
         </div>
       </div>
     </div>
@@ -226,11 +235,11 @@
 
   
 
- <div class="container py-3">      <!-- Primary Holding div for all below to footer -->
+ 
 
 <!-- Our Services -->
 
-<section id="service" class="content-section text-center ">
+<section id="service" class="text-center ">
 <div class="container px-4 py-5" id="hanging-icons">
     <h1>Our Services</h1>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
@@ -312,7 +321,7 @@ As a standard of quality, all our projects have minified images, Javascript code
  
    <!-- Customer plans -->
 
-    <section id="customer" class="content-section text-center customer">
+    <section id="customer" class="text-center">
       <div class="container">
         <h1>Customer Plans</h1>
 
@@ -435,7 +444,7 @@ As a standard of quality, all our projects have minified images, Javascript code
 
       <!-- About Section -->
       
-    <section id="about" class="content-section text-center">
+    <section id="about" class="text-center">
       <div class="about-section">
         <h1>About <strong>Le R&ecirc;ve Agency</strong></h1>
         <p class="lead">
@@ -451,7 +460,7 @@ As a standard of quality, all our projects have minified images, Javascript code
 
     <!-- Portfolio Section -->
 
-    <section id="portfolio" class="portfolio content-section text-center">
+    <section id="portfolio" class="portfolio text-center">
       <div class="container">
         <h1 class="text-center">Our Portfolio</h1>
 
@@ -523,7 +532,7 @@ As a standard of quality, all our projects have minified images, Javascript code
 
     <!-- Contact section -->
 
-    <section id="contact" class="content-section text-center">
+    <section id="contact" class="text-center">
       <div class="row">
         <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
           <h1>Contact Le R&ecirc;ve Agency</h1>
@@ -581,8 +590,8 @@ As a standard of quality, all our projects have minified images, Javascript code
             var today = new Date();
             var year = today.getFullYear();
             document.write(year);
-          </script>
-          , All Rights Reserved.
+          </script>,
+         All Rights Reserved.
         </p>
         <p>
           Made with
@@ -593,11 +602,9 @@ As a standard of quality, all our projects have minified images, Javascript code
         </p>
       </div>
     </footer>
-
-</div>
 </main>
-<script src="./dist/js/bootstrap.bundle.min.js"></script>
-
-      
-  </body>
+<script src="./dist/js/bootstrap.bundle.min.js"></script> 
+<script src="./dist/js/jquery.easing.min.js"></script>
+    <script src="./dist/js/main.js"></script>     
+</body>
 </html>
